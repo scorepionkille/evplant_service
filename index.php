@@ -15,6 +15,7 @@ if(isset($_POST['sumbit'])){
         $_SESSION['codeAdmin']  = base64_encode($Check_userPass['code']);
         echo "<script>alert('เข้าระบบ')</script>";
         header("Location:dashboard.php");
+        echo 'TESTSETSET';
         // header("refresh:0.5;url=dashboard.php");
     } else {
         echo "<script>alert('ไม่พบข้อมูลในระบบ')</script>";
